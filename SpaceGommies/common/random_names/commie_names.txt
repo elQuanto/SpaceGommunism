@@ -1,0 +1,40 @@
+#socialist beginning names list
+empire_name_parts_list = {
+	key = "socialist_front_desc"
+	parts = {
+		"Interstellar" = 1
+		"Galactic" = 1
+		"United" = 3
+		"Democratic" = 3
+		"Free" = 2
+		"Proletarian" = 2
+	}
+}
+
+#socialist middle names list
+empire_name_parts_list = {
+	key = "socialist_mid_desc"
+	parts = {
+		"People's" = 1
+		"Galactic" = 1
+		"United" = 1
+		"Union" = 1
+		"Socialist" = 3
+		"Democratic" = 3
+		"Communist" = 2
+		"Communalist" = 2
+		"Proletarian" = 2
+	}
+}
+
+empire_name_parts_list = {
+	key = "socialist_end_desc"
+	parts = {
+		"Territories" = 2
+		"Polity" = 3
+		"Union" = 3
+		"Space" = 2
+		"Republic" = 2
+		"Commonwealth" = 2
+	}
+}

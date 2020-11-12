@@ -1,0 +1,137 @@
+civic_fully_automated = {
+	potential = { ethics = { NOT = { value = ethic_gestalt_consciousness }	} }
+	possible = {
+		ethics = {
+				value = ethic_fanatic_materialist
+			}
+		}
+	random_weight = { base = 1 }
+	modifier = {
+		planet_buildings_energy_upkeep_mult = -0.33
+		planet_pops_consumer_goods_produces_mult = 0.10
+	}
+}
+
+civic_luxury_communism = {
+	potential = { ethics = { NOT = { value = ethic_gestalt_consciousness } } 	}
+	possible = {
+			civics = { value = civic_fully_automated }
+		}
+	random_weight = { base = 1 }
+	modifier = {
+		planet_pops_consumer_goods_upkeep_mult = -0.10
+		all_technology_research_speed = 0.15
+	}
+}
+
+civic_workers_councils = {
+	potential = { ethics = { NOT = { value = ethic_gestalt_consciousness }	} }
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_egalitarian
+				value = ethic_egalitarian
+				value = ethic_fanatic_egalitarian
+			}
+			OR = {
+				text = civic_tooltip_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
+			}
+			}
+		}
+	random_weight = { base = 1 }
+	modifier = {
+				pop_government_ethic_attraction = 0.10
+				pop_citizen_happiness = 0.10
+	}
+}
+
+civic_syndicalist_unions = {
+	potential = { ethics = { NOT = { value = ethic_gestalt_consciousness }	} }
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_egalitarian
+				value = ethic_egalitarian
+				value = ethic_fanatic_egalitarian
+			}
+			OR = {
+				text = civic_tooltip_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
+			}
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+				pop_cat_specialist_happiness = 0.05
+				pop_cat_worker_happiness = 0.15
+	}
+}
+
+civic_worker_direction = {
+	potential = { ethics = { NOT = { value = ethic_gestalt_consciousness }	} }
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_egalitarian
+				value = ethic_egalitarian
+				value = ethic_fanatic_egalitarian
+			}
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+				country_admin_cap_mult = 0.05
+				leader_skill_levels = 2
+	}
+}
+
+#civic_abolished_value = {
+#	potential = { ethics = { NOT = { value = ethic_gestalt_consciousness }	} }
+#	possible = {
+#		ethics = {
+#			OR = {
+#				text = civic_tooltip_materialist
+#				value = ethic_materialist
+#				value = ethic_fanatic_materialist
+#			}
+#		}
+#	}
+#	random_weight = { base = 1 }
+#	modifier = {
+#	}
+#}
+
+civic_abolished_property = {
+	potential = { ethics = { NOT = { value = ethic_gestalt_consciousness }	} }
+	possible = {
+		ethics = {
+				value = ethic_fanatic_egalitarian
+			}
+		}
+	random_weight = { base = 1 }
+	modifier = {
+		planet_stability_add = 3
+		country_unity_produces_mult = 0.05
+		planet_pops_consumer_goods_upkeep_mult = -0.05
+	}
+}
+
+civic_horizontal_society = {
+	potential = { ethics = { NOT = { value = ethic_gestalt_consciousness }	} }
+	possible = {
+		ethics = {
+				value = ethic_fanatic_egalitarian
+			}
+		}
+	random_weight = { base = 1 }
+	modifier = {
+		pop_ethic_egalitarian_attraction_mult = 0.15
+		leader_cost = -0.25
+		envoys_add = 1
+		country_starbase_influence_cost_mult = -0.15
+		country_claim_influence_cost_mult = 1
+	}
+}

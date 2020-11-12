@@ -1,0 +1,114 @@
+
+
+# Proletarian Democracy
+gov_radical_default = {
+	ruler_title = RT_SELECT
+	ruler_title_female = RT_SELECT_FEMALE
+
+	possible = {
+		has_authority = auth_democratic
+		has_ethic = ethic_fanatic_egalitarian
+	}
+
+	weight = {
+		base = 5
+		modifier = {
+			factor = 2.2
+			has_valid_civic = civic_workers_councils
+		}
+	}
+}
+
+# Horizontalist Society
+gov_anarchist = {
+	ruler_title = RT_SELECT
+	ruler_title_female = RT_SELECT_FEMALE
+
+	possible = {
+		has_authority = auth_democratic
+		has_ethic = ethic_fanatic_egalitarian
+	}
+
+	weight = {
+		base = 5
+		modifier = {
+			factor = 2.5
+			has_valid_civic = civic_horizontal_society
+		}
+	}
+}
+
+# Fully Automated Luxury Communism
+gov_falc = {
+	ruler_title = RT_CHANCELLOR
+	ruler_title_female = RT_CHANCELLOR_FEMALE
+
+	possible = {
+		has_ethic = ethic_fanatic_materialist
+	}
+
+	weight = {
+		base = 5
+		modifier = {
+			factor = 25
+			has_valid_civic = civic_luxury_communism
+		}
+	}
+}
+
+# Socialist Republic
+gov_soc_republic = {
+	ruler_title = RT_CHANCELLOR
+	ruler_title_female = RT_CHANCELLOR_FEMALE
+
+	possible = {
+		has_authority = auth_democratic
+		has_ethic = ethic_egalitarian
+	}
+
+	weight = {
+		base = 5
+		modifier = {
+			factor = 5
+			has_valid_civic = civic_worker_direction
+		}
+	}
+}
+
+# Syndicalist Republic
+gov_syn_republic = {
+	ruler_title = RT_CHANCELLOR
+	ruler_title_female = RT_CHANCELLOR_FEMALE
+
+	possible = {
+		has_authority = auth_democratic
+		has_ethic = ethic_egalitarian
+	}
+
+	weight = {
+		base = 5
+		modifier = {
+			factor = 5
+			has_valid_civic = civic_syndicalist_unions
+		}
+	}
+}
+
+#Communist Polity
+gov_communist = {
+	ruler_title = RT_SECRETARY
+	ruler_title_female = RT_SECRETARY_FEMALE
+	
+	possible = {
+		has_ethic = ethic_fanatic_egalitarian
+	}
+	
+		weight = {
+		base = 5
+		modifier = {
+			factor = 15
+			has_valid_civic = civic_abolished_property
+		}
+	}
+}
+

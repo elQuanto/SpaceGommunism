@@ -27,6 +27,7 @@ empire_name_parts_list = {
 	}
 }
 
+#socialist end names list
 empire_name_parts_list = {
 	key = "socialist_end_desc"
 	parts = {
